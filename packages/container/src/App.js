@@ -2,7 +2,7 @@ import React from "react";
 import MarketingApp from "./components/MarketingApp";
 
 // @Component
-// simulate change in container 2
+// simulate change in container app
 
 export default () => {
   return (

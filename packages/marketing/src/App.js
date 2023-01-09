@@ -5,7 +5,7 @@ import { StylesProvider } from "@material-ui/core/styles";
 import Landing from "./components/Landing";
 import Pricing from "./components/Pricing";
 
-// simulate change
+// simulate change in marketing
 
 const App = () => {
   return (
