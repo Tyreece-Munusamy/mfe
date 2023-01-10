@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // import MarketingApp from "./components/MarketingApp";
 import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 // import AuthApp from "./components/AuthApp";
+// redeploy App
 
 const MarketingLazy = lazy(() => import("./components/MarketingApp"));
 const AuthLazy = lazy(() => import("./components/AuthApp"));
