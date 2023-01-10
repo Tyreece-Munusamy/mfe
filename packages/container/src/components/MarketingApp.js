@@ -9,11 +9,11 @@ export default () => {
   useEffect(() => {
     const { onParentNavigate } = mount(ref.current, {
       initialPath: history.location.pathname,
-      onNavigate: ({ pathname: nextPathName }) => {
-        const pathname = history.location.pathname;
+      onNavigate: ({ pathname: nextPathname }) => {
+        const { pathname } = history.location;
 
-        if (pathname !== nextPathName) {
-          history.push(nextPathName);
+        if (pathname !== nextPathname) {
+          history.push(nextPathname);
         }
       },
     });

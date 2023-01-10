@@ -12,17 +12,17 @@ const generateClassName = createGenerateClassName({
   productionPrefix: "ma",
 });
 
-const App = ({ history }) => {
+export default ({ history }) => {
   return (
-    <StylesProvider generateClassName={generateClassName}>
-      <Router history={history}>
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/pricing" component={Pricing} />
-        </Switch>
-      </Router>
-    </StylesProvider>
+    <div>
+      <StylesProvider generateClassName={generateClassName}>
+        <Router history={history}>
+          <Switch>
+            <Route exact path="/pricing" component={Pricing} />
+            <Route path="/" component={Landing} />
+          </Switch>
+        </Router>
+      </StylesProvider>
+    </div>
   );
 };
-
-export default App;
