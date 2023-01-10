@@ -8,7 +8,7 @@ import {
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 
-// simulate change
+// simulate change in auth
 
 const generateClassName = createGenerateClassName({
   productionPrefix: "au",
